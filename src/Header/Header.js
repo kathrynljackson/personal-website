@@ -1,23 +1,17 @@
 import React from 'react';
 import { Component } from 'react';
+import './Header.css';
 
-class Header extends Component {
-    constructor() {
-        super()
-        this.state = {
-            
-        }
-    }
+function Header() {
 
-    render(){
-        return(
-            <header>
-                <nav>
-                    <a>About Me</a>
-                </nav>
-            </header>
-        )
-    }
+    return(
+            <nav className='header-nav'>
+                <a href ='/aboutme'>About Me</a>
+                <a href='/myprojects'>My Projects</a>
+                <a href='https://github.com/kathrynljackson'>My Github</a>
+            </nav>
+    )
 }
+
 
 export default Header;
