@@ -1,0 +1,27 @@
+$plum: #4D2C3D;
+$ornate: #AB9353;
+$olive: #57652A;
+$bluebell: #155765;
+
+.header-nav {
+    padding: 1em;
+    display: flex;
+    justify-content: flex-end;
+    background-color: $bluebell;
+    
+
+    a {
+        font-family: 'Poppins', sans-serif, 'light';
+        text-decoration: none;
+        padding: .5em;
+        color: white;
+        font-size: 1.5em;
+        font-weight: 400;
+    }
+
+    a:hover {
+        text-decoration: underline $ornate;
+        color: white;
+        display: inline-block;
+    }
+}

@@ -1,0 +1,35 @@
+$plum: #4D2C3D;
+$ornate: #AB9353;
+$olive: #57652A;
+$bluebell: #155765;
+
+.footer-nav {
+    padding: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: $olive;
+
+    .contact-info-1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    .contact-info-2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    a {
+        font-family: 'Poppins', sans-serif, 'light';
+        color: white;
+        font-size: 1.2em;
+        font-weight: 400;
+    }
+
+    h1 {
+        color: white;
+    }
+}

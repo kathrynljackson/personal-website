@@ -5,7 +5,8 @@ import Header from './Header/Header.js'
 import Homepage from './Homepage/Homepage.js'
 import React from 'react';
 import MyProjects from './MyProjects/MyProjects.js';
-import AboutMe from './AboutMe/AboutMe.js'
+import AboutMe from './AboutMe/AboutMe.js';
+import Footer from './Footer/Footer.js';
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
           <AboutMe />
         )} />
       </Router>
+      <Footer />
     </div>
   )
 }
