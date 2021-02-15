@@ -12,7 +12,7 @@ function Footer() {
                     <a>Email Link Here</a>
                 </section>
                 <section className='contact-info-1'>
-                    <a>Kathryn Jackson</a>
+                    <a className='name' href='/'>Kathryn Jackson</a>
                     <a>Washington, DC</a>
                 </section>
             </footer>
