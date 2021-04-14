@@ -3,12 +3,18 @@ $ornate: #AB9353;
 $olive: #57652A;
 $bluebell: #155765;
 
+$charleston: #2C2B30;
+$dark: #4F4F51;
+$light: #D6D6D6;
+$orchidpink: #F2C4CE;
+$tearose: #F58F7C;
+
 .footer-nav {
     padding: 1em;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: $olive;
+    background-color: $light;
 
     .contact-info-1 {
         display: flex;
@@ -32,13 +38,17 @@ $bluebell: #155765;
 
     a {
         font-family: 'Poppins', sans-serif, 'light';
-        color: white;
+        color: $charleston;
         font-size: 1.2em;
         font-weight: 400;
     }
 
+    a:hover {
+        color: $tearose
+    }
+
     h1 {
         font-family: 'Poppins', sans-serif, 'light';
-        color: white;
+        color: $charleston;
     }
 }
