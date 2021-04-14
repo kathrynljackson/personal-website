@@ -1,5 +1,5 @@
 import logo from './logo.svg';
-import './App.css';
+import './App.scss';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Header from './Header/Header.js'
 import Homepage from './Homepage/Homepage.js'
@@ -11,7 +11,7 @@ import Footer from './Footer/Footer.js';
 
 function App() {
   return (
-    <div>
+    <div className='app'>
       <Header />
       <Homepage />
       <Router>
