@@ -18,10 +18,18 @@ class MyProjects extends Component {
                     return <article key={index} className='project-section'>
                     <h1 key={project.projectName} className='project-title'>{ project.projectName }</h1>
                     <section key={project.createdUsing}className='created-using'>{ project.createdUsing.map((skill, index) => {
-                            return <a className='skill-list' key={index}> {skill} </a>
+                            return <a className='skill-list' key={index}> {skill}</a>
                         }) }
                     </section>
-                    <section className='project-description' key={project.projectDescription}>{project.projectDescription}</section>
+                    <div className='row'>
+                        <section className='image-section'>
+                            <img className='image' src={ project.projectImage } />
+                        </section>
+                        <section className='project-description' key={project.projectDescription}>{ project.projectDescription.map((paragraph, index) => {
+                            return <p className='description-text' key={index}>{paragraph}<br /></p>
+                        }) }</section>
+
+                    </div>
                     <a className='project-link' key={project.projectLink} href={project.projectLink}>View Project</a>
                     </article>
                 })}
