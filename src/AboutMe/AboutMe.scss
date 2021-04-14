@@ -3,11 +3,20 @@ $ornate: #AB9353;
 $olive: #57652A;
 $bluebell: #155765;
 
+$charleston: #2C2B30;
+$dark: #4F4F51;
+$light: #D6D6D6;
+$orchidpink: #F2C4CE;
+$orchidpinklow: #F2C4CE80;
+$tearose: #F58F7C;
+
 .about-me-main {
-    background-color: #4D2C3D;
-    color: white;
+    background-color: $orchidpink;
+    color: $charleston;
     font-family: 'Poppins', sans-serif, 'light';
     display: flex;
     flex-direction: column;
-    padding: 2em
+    padding: 2em;
+    margin: 5%;
+    font-size: 1.6em;
 }
