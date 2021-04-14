@@ -11,14 +11,19 @@ class MyProjects extends Component {
     }
  
     render(){
-        console.log(this.state.myProjectsList)
+        // console.log(this.state.myProjectsList)
         return(
             <main className = 'project-main'>
                 {this.state.myProjectsList.map((project, index) => {
-                    return <section key={index} className='project-section'>
+                    return <article key={index} className='project-section'>
                     <h1 key={project.projectName} className='project-title'>{ project.projectName }</h1>
-                    <p key={project.createdUsing}className='created-using'>{ project.createdUsing }</p>
+                    <section key={project.createdUsing}className='created-using'>{ project.createdUsing.map((skill, index) => {
+                            return <p className='skill-list' key={index}> {skill} </p>
+                        }) }
                     </section>
+                    <section className='project-description' key={project.projectDescription}>{project.projectDescription}</section>
+                    <a className='project-link' key={project.projectLink} href={project.projectLink}>View Project</a>
+                    </article>
                 })}
             </main>
         )
